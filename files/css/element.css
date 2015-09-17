@@ -1,0 +1,29 @@
+/**
+ * Put all of your styles for your element in here!
+ * @required
+ */
+
+/* User settings converted to correct units */
+@user-vertical-margins: @vertical_margins * 1px;
+@user-number-size: @num_size * 1px;
+
+/* Counter number */
+.counter-number p {
+ 	font-size: @user-number-size;
+ 	color: @num_color;
+ 	margin-top: @user-vertical-margins;
+ 	margin-bottom: @user-vertical-margins;
+	text-align: center;
+	padding: 0;
+}
+
+/* Apply bold to element */
+.content-number-bold {
+	font-weight: bold;
+}
+
+/* Top and bottom labels */
+.counter-label .paragraph {
+	text-align: center !important;
+	padding: 0 !important;
+}
