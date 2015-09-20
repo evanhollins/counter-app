@@ -20,9 +20,9 @@
 		startCounter: function() {
 			var timing = this.settings.get('timing');
 
-			// Animate immediately if that is the setting, or if counter is already in view.
+			// Animate immediately if counter is already in view.
 			// Otherwise, set interval to check if the counter is in view
-			if (timing === "immediate" || this.isScrolledIntoView(this.counter)) {
+			if (this.isScrolledIntoView(this.counter)) {
 				this.animateNum(); 
 			} else {
 				this.checkView = setInterval(this.animateWhenInView.bind(this), 200);
@@ -32,14 +32,11 @@
 		// Perform animation
 		animateNum: function() {
 			var counter  = this.counter;
-			var start 	 = this.settings.get('start');
 			var end 	 = this.settings.get('end');
-			var duration = this.settings.get('duration');
-			var easing   = this.settings.get('easing');
+			var duration = this.settings.get('duration') * 1000; // convert to ms
 
 			// Execute animation
-			$({num: start}).animate({num: end}, {
-				easing: easing,
+			$({num: 0}).animate({num: end}, {
 				duration: duration,
 				step: function() {
 					counter.text(Math.round(this.num));

@@ -15,65 +15,49 @@
 				"properties": [
 					{
 						"type": "group",
-						"name": "animation",
-						"label": "Animation",
+						"name": "number",
+						"label": "Number",
 						"properties": [
 							{
-								"name": "start",
-								"label": "Start",
-								"type": "int",
-								"default": 0,
-								"min": "0"
-							},
-							{
 								"name": "end",
-								"label": "End",
+								"label": "Counts to this number",
 								"type": "int",
 								"default": 360,
 								"min": "0"
+							}
+						]
+					},					
+					{
+						"type": "group",
+						"name": "text-display",
+						"label": "Text Display",
+						"properties": [
+							{
+								"name": "above",
+								"label": "Above",
+								"type": "toggle",
+								"default": true
 							},
 							{
-								"name": "duration",
-								"label": "Duration (ms)",
-								"type": "int",
-								"default": 1500,
-								"min": "0"
-							},
-							{
-								"name": "timing",
-								"label": "Timing",
-								"type": "select",
-								"default": "immediate",
-								"values": [
-									{"name":"Immediate", "value": "immediate"},
-									{"name":"Scroll Into View", "value": "scrollIntoView"}
-								]
-							},
-							{
-								"name": "easing",
-								"label": "Easing",
-								"type": "select",
-								"default": "swing",
-								"values": [
-									{"name":"Swing", "value": "swing"},
-									{"name":"Linear", "value": "linear"},
-									{"name":"EaseInCubic", "value": "easeInCubic"},
-									{"name":"EaseOutCubic", "value": "easeOutCubic"}
-		                        ]
+								"name": "below",
+								"label": "Below",
+								"type": "toggle",
+								"default": true
 							}
 						]
 					},
 					{
 						"type": "group",
-						"name": "display",
-						"label": "Display",
+						"name": "advanceds",
+						"label": "Advanced",
 						"properties": [
 							{
 								"name": "num_size",
-								"label": "Number Size (px)",
+								"label": "Number Size",
 								"type": "int",
 								"default": 80,
-								"min": "1"
+								"min": "1",
+								"step": "5"
 							},
 							{
 								"name": "num_color",
@@ -88,22 +72,12 @@
 								"default": false
 							},
 							{
-								"name": "vertical_margins",
-								"label": "Vertical Margins (px)",
+								"name": "duration",
+								"label": "Seconds",
 								"type": "int",
-								"default": -10
-							},
-							{
-								"name": "top_label",
-								"label": "Top Label",
-								"type": "toggle",
-								"default": true
-							},
-							{
-								"name": "bottom_label",
-								"label": "Bottom Label",
-								"type": "toggle",
-								"default": true
+								"default": 2,
+								"min": "0",
+								"step": "1"
 							}
 						]
 					}
