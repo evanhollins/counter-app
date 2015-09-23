@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="17px" height="32px" viewBox="0 0 17 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>Counter</title>
+    <title>New Build/build-counter-32</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Counter" sketch:type="MSArtboardGroup" fill="#363B3E">
+        <g id="New-Build/build-counter-32" sketch:type="MSArtboardGroup" fill="#C9CDCF">
             <g id="counter-icon" sketch:type="MSLayerGroup" transform="translate(0.000000, 4.000000)">
                 <path d="M13.4,6.18 C13.01,6.06 12.57,6 12.1,6 C11.63,6 11.19,6.06 10.8,6.18 C8.33,6.89 7.26,9.62 7.26,12.24 C7.26,14.84 8.32,17.56 10.75,18.29 C11.16,18.42 11.61,18.49 12.1,18.49 C12.59,18.49 13.04,18.42 13.45,18.29 C15.88,17.56 16.94,14.84 16.94,12.24 C16.94,9.62 15.87,6.89 13.4,6.18 Z M12.1,16.61 C10.13,16.61 9.42,14.54 9.42,12.24 C9.42,9.93 10.13,7.88 12.1,7.88 C14.08,7.88 14.79,9.93 14.79,12.24 C14.79,14.54 14.08,16.61 12.1,16.61 Z" id="Path" sketch:type="MSShapeGroup"></path>
                 <path d="M3.48,6.18 L0,9.7 L1.23,10.98 L3.21,8.94 L3.21,18.27 L5.33,18.27 L5.33,6.18 L3.48,6.18 L3.48,6.18 Z" id="Path" sketch:type="MSShapeGroup"></path>
