@@ -8,21 +8,21 @@
 
 /* Counter number */
 .counter-number p {
- 	font-size: @user-number-size;
- 	color: @num_color;
- 	margin-top: -10px;
- 	margin-bottom: -10px;
-	text-align: center;
-	padding: 0;
+    font-size: @user-number-size;
+    color: @num_color;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-align: center;
+    padding: 0;
 }
 
 /* Apply bold to element */
 .content-number-bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 /* Top and bottom labels */
 .counter-label .paragraph {
-	text-align: center !important;
-	padding: 0 !important;
+    text-align: center !important;
+    padding: 0 !important;
 }

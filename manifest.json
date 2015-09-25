@@ -1,88 +1,90 @@
 {
-	"manifest": "1",
-	"version": "1.0.0",
-	"locale": {
-		"default": "en-us",
-		"supported": ["en-us"]
-	},
-	"elements": [
-		{
-			"name": "Counter",
-			"path": "files",
-			"version": "1.0.0",
-			"settings": {
-				"config": {},
-				"properties": [
-					{
-						"type": "group",
-						"name": "number",
-						"label": "Number",
-						"properties": [
-							{
-								"name": "end",
-								"label": "Counts to this number",
-								"type": "int",
-								"default": 360,
-								"min": "0"
-							}
-						]
-					},					
-					{
-						"type": "group",
-						"name": "text-display",
-						"label": "Text Display",
-						"properties": [
-							{
-								"name": "above",
-								"label": "Above",
-								"type": "toggle",
-								"default": true
-							},
-							{
-								"name": "below",
-								"label": "Below",
-								"type": "toggle",
-								"default": true
-							}
-						]
-					},
-					{
-						"type": "group",
-						"name": "advanceds",
-						"label": "Advanced",
-						"properties": [
-							{
-								"name": "num_size",
-								"label": "Number Size",
-								"type": "int",
-								"default": 80,
-								"min": "1",
-								"step": "5"
-							},
-							{
-								"name": "num_color",
-								"label": "Number Color",
-								"type": "color",
-								"default": "black"
-							},
-							{
-								"name": "num_bold",
-								"label": "Number Bold",
-								"type": "toggle",
-								"default": false
-							},
-							{
-								"name": "duration",
-								"label": "Seconds",
-								"type": "int",
-								"default": 2,
-								"min": "0",
-								"step": "1"
-							}
-						]
-					}
-				]
-			}
-		}
-	]
+  "manifest": "1",
+  "version": "1.0.0",
+  "locale": {
+    "default": "en-us",
+    "supported": [
+      "en-us"
+    ]
+  },
+  "elements": [
+    {
+      "name": "Counter",
+      "path": "files",
+      "version": "1.0.0",
+      "settings": {
+        "config": {},
+        "properties": [
+          {
+            "type": "group",
+            "name": "number",
+            "label": "Number",
+            "properties": [
+              {
+                "name": "end",
+                "label": "Counts to this number",
+                "type": "int",
+                "default": 360,
+                "min": "0"
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "text-display",
+            "label": "Text Display",
+            "properties": [
+              {
+                "name": "above",
+                "label": "Above",
+                "type": "toggle",
+                "default": true
+              },
+              {
+                "name": "below",
+                "label": "Below",
+                "type": "toggle",
+                "default": true
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "advanceds",
+            "label": "Advanced",
+            "properties": [
+              {
+                "name": "num_size",
+                "label": "Number Size",
+                "type": "int",
+                "default": 80,
+                "min": "1",
+                "step": "5"
+              },
+              {
+                "name": "num_color",
+                "label": "Number Color",
+                "type": "color",
+                "default": "black"
+              },
+              {
+                "name": "num_bold",
+                "label": "Number Bold",
+                "type": "toggle",
+                "default": false
+              },
+              {
+                "name": "duration",
+                "label": "Seconds",
+                "type": "int",
+                "default": 2,
+                "min": "0",
+                "step": "1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
