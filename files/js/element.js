@@ -66,6 +66,11 @@
 
         // Helper function to determine if an element is in view
         isScrolledIntoView: function($elem) {
+            // For nested counters that are hidden
+            if (!$elem.is(':visible')) {
+                return false;
+            }
+
             var $window = $(window);
 
             var docViewTop = $window.scrollTop();
