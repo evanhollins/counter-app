@@ -37,12 +37,13 @@
             var view = this;
 
             view.animateNumInterval = setInterval(function() {
-                view.counter.text(Math.round((intervalCounter * duration * 100) / end));
+                var percentComplete = intervalCounter / (duration * 100);
+                view.counter.text(Math.round(end * percentComplete));
                 intervalCounter++;
-                if ((intervalCounter / 10) == duration) {
+                if ((intervalCounter / 100) == duration) {
                     // to beat any rounding issues
                     view.counter.text(end);
-                    clearInterlva(view.animateNumInterval);
+                    clearInterval(view.animateNumInterval);
                 }
             }, 10);
         },
