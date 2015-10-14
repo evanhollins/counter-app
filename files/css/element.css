@@ -13,9 +13,8 @@
     margin-top: -10px;
     margin-bottom: -10px;
     text-align: center;
-    padding: 5px 0 0;
-    min-height: @user-number-size + 10px;
-    line-height: @user-number-size;
+    padding: 0;
+    line-height: @user-number-size + 10px;
 }
 
 /* Apply bold to element */
