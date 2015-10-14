@@ -8,11 +8,6 @@
         initialize: function() {
             // Cache counter element
             this.counter = this.$('.counter-number p');
-
-            // Flag to keep track if the counter has already animated
-            // Used to prevent overlapping calls during the setInterval period
-            this.animated = false;
-
             this.startCounter();
         },
 
