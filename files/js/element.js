@@ -44,7 +44,7 @@
                     view.counter.text(end);
                     clearInterlva(view.animateNumInterval);
                 }
-            });
+            }, 10);
         },
 
         // Helper function to determine if an element is in view
