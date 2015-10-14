@@ -18,51 +18,34 @@
 
         // Wrapper function to determine when to start animating
         startCounter: function() {
-            var timing = this.settings.get('timing');
-
             // Animate immediately if counter is already in view.
             // Otherwise, set interval to check if the counter is in view
-            if (this.isScrolledIntoView(this.counter)) {
-                this.animateNum();
-            } else {
-                this.checkView = setInterval(this.animateWhenInView.bind(this), 200);
-            }
+            var view = this;
+            view.checkView = setInterval(function() {
+                if (view.isScrolledIntoView(view.counter)) {
+                    clearInterval(view.checkView);
+                    view.animateNum();
+                }
+            }, 200);
         },
 
         // Perform animation
         animateNum: function() {
-            var counter = this.counter;
+            var intervalCounter = 0;
             var end = this.settings.get('end');
-            var duration = this.settings.get('duration') * 1000; // convert to ms
+            var duration = this.settings.get('duration');
+            var view = this;
 
-            // Execute animation
-            $({
-                num: 0
-            }).animate({
-                num: end
-            }, {
-                duration: duration,
-                step: function() {
-                    counter.text(Math.round(this.num));
-                },
-                complete: function() {
-                    // With step function, we sometimes end up a little bit off the final number.
-                    // After the animate is done, we explicitly set it to the final number to make sure.
-                    counter.text(end);
+            view.animateNumInterval = setInterval(function() {
+                view.counter.text(Math.round((intervalCounter * duration * 100) / end));
+                intervalCounter++;
+                if ((intervalCounter / 10) == duration) {
+                    // to beat any rounding issues
+                    view.counter.text(end);
+                    clearInterlva(view.animateNumInterval);
                 }
             });
         },
-
-        // If counter is in view and the animation hasn't been performed,
-        // perform animation and end interval
-        animateWhenInView: function() {
-            if (this.animated === false && this.isScrolledIntoView(this.counter)) {
-                this.animated = true;
-                clearInterval(this.checkView);
-                this.animateNum();
-            }
-        },
-
 
         // Helper function to determine if an element is in view
         isScrolledIntoView: function($elem) {
