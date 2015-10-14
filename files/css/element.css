@@ -13,8 +13,9 @@
     margin-top: -10px;
     margin-bottom: -10px;
     text-align: center;
-    padding: 0;
-    min-height: @user-number-size;
+    padding: 5px 0 0;
+    min-height: @user-number-size + 10px;
+    line-height: @user-number-size;
 }
 
 /* Apply bold to element */
@@ -26,4 +27,5 @@
 .counter-label .paragraph {
     text-align: center !important;
     padding: 0 !important;
+    margin: 0 !important;
 }
