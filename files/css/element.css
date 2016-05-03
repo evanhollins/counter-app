@@ -9,7 +9,7 @@
 /* Counter number */
 .counter-number p {
     font-size: @user-number-size;
-    color: @num_color;
+    color: @num_color !important;
     margin-top: -10px;
     margin-bottom: -10px;
     text-align: center;
