@@ -1,6 +1,6 @@
 {
   "manifest": "1",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "locale": {
     "default": "en-us",
     "supported": [
@@ -11,7 +11,7 @@
     {
       "name": "Counter",
       "path": "files",
-      "version": "1.1.4",
+      "version": "1.1.5",
       "settings": {
         "config": {},
         "properties": [
@@ -84,6 +84,16 @@
             ]
           }
         ]
+      },
+      "tutorial": {
+        "introduction": "The Counter app highlights numerical information with a bold, attention-getting countdown animation.",
+        "type": "steps",
+        "content": [
+          "Click the app to bring up the settings and adjust the number count. You can use the + and - buttons or type directly into the number field (handy for larger numbers).",
+          "Decide where you’d like text to display with the counter. You can toggle the above and below text on and off. The color and size of the text can be modified using the text editing tool bar.",
+          "Configure the size, color, and weight for your numbers. You can also adjust the speed of the countdown sequence with the + and - buttons, or by typing directly into the number field."
+        ],
+        "autopop": true
       }
     }
   ]
