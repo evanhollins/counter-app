@@ -7,7 +7,7 @@
 @user-number-size: @num_size * 1px;
 
 /* Counter number */
-.counter-number p {
+.counter-number > div {
     font-size: @user-number-size;
     color: @num_color !important;
     margin-top: -10px;
