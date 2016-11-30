@@ -7,7 +7,7 @@
     var CounterElement = PlatformElement.extend({
         initialize: function() {
             // Cache counter element
-            this.counter = this.$('.counter-number p');
+            this.counter = this.$('.counter-number div');
             this.startCounter();
         },
 

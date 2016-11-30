@@ -5,7 +5,7 @@
         {{/above}}
     </div>
     <div class="counter-number">
-        <p {{#num_bold}}class="content-number-bold"{{/num_bold}}>{{start}}</p>
+        <div {{#num_bold}}class="content-number-bold"{{/num_bold}}>{{start}}</div>
     </div>
     <div class="counter-label counter-bottom-label">
         {{#below}}
